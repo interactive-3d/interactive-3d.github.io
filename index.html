@@ -1,9 +1,237 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Hi</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVZFKZEW0F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVZFKZEW0F');
+  </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Interactive3D: Create What You Want by Interactive 3D Generation</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-<h1>Hello World!</h1>
-Text-to-3D
-</body>
-</html>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Interactive3D: Create What You Want by Interactive 3D Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                  <span class="author-block">
+                    <text >Anonymous</text>
+                  </span>
+            </div>
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/interactive-3d/interactive-3d.github.io" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img  src="static/images/teaser_interactive3d.png" alt="Teaser"/>
+      <h2 class="subtitle has-text-centered">
+        <span></span> <strong>Interactive 3D Generation in two stages with distinct representations</strong>: (i) Gaussian Splatting for interactions; (ii) Convert to InstantNGP for further Hash Refinement and geomerty extraction.  
+      </h2>
+      <h2 class="subtitle has-text-centered">
+      <span class="dnerf"></span>
+        We propose Interactive3D, which achieves <strong>controllable</strong> and <strong>high-quality</strong> 3D Generation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+      <div class="container">
+
+        <h2 class="subtitle has-text-centered">
+          <span></span> "A Genshin Impact style anime girl with blue hair and dress."
+        </h2>
+          <div class="item item-chair-tp">
+            <p align="center" width="100%">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/anime_girl.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        
+          <h2 class="subtitle has-text-centered">
+            <span></span> "A Genshin Impact style anime girl with red hair wearing hat and dress."
+          </h2>
+          <div class="item item-chair-tp">
+            <p align="center" width="100%">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/anime_girl_2.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            <span></span> "A draven knight riding a red fire dragon."
+          </h2>
+          <div class="item item-chair-tp">
+            <p align="center" width="100%">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/draven_knight.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            <span></span> "A draven knight wearing a helmet riding a red fire dragon."
+          </h2>
+          <div class="item item-chair-tp">
+            <p align="center" width="100%">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/draven_knight_2.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            <span></span> "A green GUNDAM robot, high-quality."
+          </h2>
+          <div class="item item-chair-tp">
+            <p align="center" width="100%">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/gundam_fine.mp4" type="video/mp4">
+              </video>
+            </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<!-- <section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce Interactive3D, an innovative interactive framework for 3D generation that enables users to precisely manipulate the generative process through flexible 3D interactions. Interactive3D is constructed in two cascading stages, each utilizing distinct 3D representations. The initial stage employs Gaussian Splatting for direct user interaction, allowing modifications and guidance of the generative direction at any step through (i) Adding and Removing components, (ii) Deformable and Rigid Dragging, (iii) Geometric Transformations, and (iv) Semantic Editing. In the subsequent stage, the Gaussian splats are transformed into InstantNGP. We then apply a novel (v) Interactive Hash Refinement module to further add details and extract the geometry. Our experiments demonstrate that Interactive3D markedly improves the controllability and quality of 3D generation.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method: Interactive 3D Generation</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/method.png" alt="MY ALT TEXT"/>
+          <!-- <p>The framework of Bidirectional Diffusion. It jointly trains a 3D diffusion in SDF <span>&#x2112;</span> space and a 2D diffusion in multi-view image <span>&#x2115;</span> space, which are both enhanced by foundation models and interconnected by bidirectional guidance to achieve consistent denoising between two domains.</p> -->
+          <p><strong>The overall architecture</strong>: Interactive3D contains two stages with distinct 3D representations: (I) Gaussian Splatting for flexible user interactions such as add/remove parts; geometry transformation; deformable or rigid dragging and semantic editing, (II) the Gaussian blobs are converted to InstantNGP using NeRF distillation and fine-tined by our Interactive Hash Refinement Module.</p>
+        </div>
+        <h2 class="title is-3">Qualitative experiment examples </h2>
+        <div class="content has-text-justified">
+          <img src="static/images/results.jpg" alt="MY ALT TEXT"/>
+          <p>
+            Our results surpass previous methods both in texture and geomerty thanks to the interactive generation framework.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
